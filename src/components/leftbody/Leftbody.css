@@ -1,0 +1,158 @@
+.leftbody{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 30px;
+    margin-left: 70px;
+    width: 500px;
+}
+.leftbody h1{
+    margin-top: 0;
+}
+.leftbody p{
+    margin-top: 3px;
+}
+.price-section{
+    display: flex;
+    gap: 20px;
+}
+.price-section .discount-box{
+    height: 20px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-self: center;
+    margin-top: 6px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    margin-right: 50px;
+}
+.price-section .discount-box p{
+    margin-top: 12px;
+    font-size: small;
+    font-weight: bold;
+}
+.underline-text{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.main-text{
+    opacity: 0.8;
+}
+.counter{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 40px;
+    background-color:rgb(217, 240, 240);
+    border-radius: 3px;
+}
+.counter p{
+    margin-top: 7px;
+    font-weight: bold;
+}
+.counter .minus{
+    width: 15px;
+    height: 5px;
+    margin-top: 17px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.counter .plus{
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.leftbody-lower{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+.btn-box{
+    width: 200px;
+    height: 40px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.btn-box:hover{
+    box-shadow: 0px 0px 10px 1px #000;
+    animation: fadeIn 2s;
+}
+.btn-box button{
+  border: none;
+  background-color: tomato;
+  font-size: 500;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+.btn-box img{
+    margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .leftbody {
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .price-section {
+        gap: 15px;
+    }
+
+    .counter {
+        width: 100px;
+    }
+
+    .btn-box {
+        width: 150px;
+        height: 35px;
+    }
+
+    .btn-box button {
+        font-size: 400;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftbody {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .price-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .discount-box {
+        width: 35px;
+        height: 18px;
+        
+    }
+
+    .counter {
+        width: 90px;
+    }
+
+    .btn-box {
+        width: 170px;
+        height: 35px;
+    }
+
+    .btn-box button {
+        font-size: 300;
+    }
+}
